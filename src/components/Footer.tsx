@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="flex items-center space-x-1">
           <div className="flex items-center space-x-1">
             <a href="#" onClick={onSubmit}>
-              สร้างจากหัวใจ ❤️ โดย อะตอม ช้อป นาย หง หนึ่ง
+              สร้างจากหัวใจ ❤️ โดย อะตอม ช้อป นาย หนึ่ง หง
             </a>
             <BiLinkExternal size={12} />
           </div>
