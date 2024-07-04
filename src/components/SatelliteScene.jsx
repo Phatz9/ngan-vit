@@ -13,17 +13,6 @@ import { useFrame } from '@react-three/fiber';
 // @ts-ignore
 export function SatelliteScene(props) {
   const { nodes, materials } = useGLTF("/Station.glb");
-
-  const [rotation, setRotation] = React.useState([0, 0, 0]);
-
-  // Rotate the model on each frame
-  useFrame(() => {
-    setRotation([
-      rotation[0] + 0.01, // Adjust the rotation speed as needed
-      rotation[1] + 0.01,
-      rotation[2] + 0.01,
-    ]);
-  });
   
   return (
     <group {...props} dispose={null}>
@@ -32,7 +21,6 @@ export function SatelliteScene(props) {
         receiveShadow
         geometry={nodes.InternationalSpaceStation_mesh.geometry}
         material={materials.InternationalSpaceStation_mat}
-        rotation={rotation}
       />
     </group>
   );
