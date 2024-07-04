@@ -11,7 +11,7 @@ const Header = () => {
         <Link href="/">
           <div className="flex items-center cursor-pointer text-white hover:text-gray-300 transition-all">
             <Image src="/sw2_logo.png" alt="Logo" width={100000} height={100000} className="h-9 w-9" />
-            <h1 className="text-xl ml-2 mr-2">ANCHN - Space Technology</h1>
+            <h1 className="text-xl ml-2 mr-2">ANCNH - Space Technology</h1>
           </div>
         </Link>
         <div className="flex text-white items-center space-x-6">
